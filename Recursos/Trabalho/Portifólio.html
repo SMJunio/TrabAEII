@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Titulo da página-->
+    <title>Meu Portifólio</title>
+
+    <!--Estilizaçã da página-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        /*Estilização do menu*/
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /*Estilização do cabeçalho*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #3afae0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /*Estilização específica do menu (por classes em alguns aspectos)*/
+        ul {
+            list-style-type: none;
+            color: #3afae0;
+        }
+
+        .row,
+        .row:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #3afae0 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            color:black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .row:hover {
+            background-color: #3afae0;
+            color: white;
+        }
+
+        /*Estilizando a tabela dos trabalhos de maneira específica*/
+        .trabalho,
+        .trabalho:link {
+            text-decoration: none;
+            color: rgb(62, 79, 191) ;
+        }
+
+        .trabalho:hover {
+            color: darkblue;
+            background-color: rgb(73, 209, 255);
+        }
+
+        /*Estilizando a "section" da página*/
+        section{
+            display: flex;
+            justify-content: center;
+        }
+
+        /*Estilizando a tabela em geral*/
+        .tabela { 
+            display: flex;
+            border: solid 2px #3afae0;
+            padding: 5px;
+            background-color: rgb(236, 250, 255);
+            border-radius: 10px;
+            justify-content: center;
+            justify-items: center;
+            margin-right: 400px;
+            margin-left: 400px;
+            
+        }
+
+        /*Estilizando cada coluna da tabela*/
+        .tabela th, .tabela td {
+            border: solid 1px #3afae0;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        /*.tabela tr:first-child {
+            background-color: lightgray;
+        }*/
+
+        /*Estilizando a tag "h1" */
+        h1 {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+    </style>
+    <!--Encerra a estilização-->
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Meu Portifólio</h1>
+        <br>
+
+    </header>
+
+    <!--Menu-->
+    <nav class="container menu">
+        <ul>
+            <li><a class="row" href="contato.html">Seu contato</a></li>
+            <li><a class="row" href="MinhaFomação.html">Minhas Formações</a></li>
+            <li><a class="row" href="index.html">Página principal</a></li>
+            <li><a class="row" href="SobreMim.html">Biografia</a></li>
+        </ul>
+    </nav>
+
+    <!--Quebra de linhas-->
+    <br>
+    <br>
+
+    <!--Section da página-->
+    <section>
+
+    <!--Criação da Tabela-->
+    <table class="tabela">
+        <!--Cada linha separdo por cada trabalho e seu respectivo link-->
+        <tr>
+            <th>Descrição do arquivo</th>
+            <th>Link do arquivo</th>
+        </tr>
+
+        <tr>
+            <td>Atividade extensionista</td>
+            <td><a class="trabalho" href="Atividades Extensionistas - Modelo de Proposta de Tema e Trabalho Final .pdf">
+                AtividadeExtensionista.pdf
+            </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Análise de sistemas</td>
+            <td><a class="trabalho" href="Trabalho Lógica e Programação de algoritmos.docx">
+                Lógica e Programação.docx
+            </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lógica de programação e algoritmos</td>
+            <td><a class="trabalho" href="TRAB - Análise de Sistemas.pdf">
+                Análise de Sistemas.pdf
+            </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fundamentos de Design de Sistemas</td>
+            <td><a class="trabalho" href="Trab - Fundamento de Design de Sistemas.pdf">
+                Design de Sistemas.pdf
+            </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fundamentos de Desenvolvimento de software</td>
+            <td><a class="trabalho" href="TRABALHO FDS - Samuel Junio.docx">
+                FDS.docx
+            </a>
+            </td>
+        </tr>
+    
+    </table>
+
+    <!--Fechamento da tabela-->
+</section>
+</body>
+<!--Filização da tabela-->
+</html>

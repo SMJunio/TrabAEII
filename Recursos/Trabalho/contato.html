@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Parâmetros do html / Cabeçalho -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Nome da página -->
+    <title>Contato</title>
+
+    <!--Estilização da página-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        /*Estilização do menu*/
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /*Estilização do cabeçalho da página*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #3afae0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            
+        }   
+
+        /*Estilização específica do menu*/
+        ul {
+            list-style-type: none;
+            color: #3afae0;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #3afae0 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            color: black;
+            
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #3afae0;
+            color: white;
+        }
+
+        
+        /*Estilização do section da página*/
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+
+        /*Estilização geral do formulário*/
+        form {
+            padding: 30px;
+            background-color: #3afae0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            border: 2px solid black;
+            border-radius: 30px;
+            margin: 10px
+        }   
+
+        /*Estilização das divs dentro do formulário*/
+        form div {
+            display:flex;
+            flex-direction: column;
+            margin-bottom:  30px;
+        }
+
+
+        /*Estilizaçao dos "inputs" e das "textareas" dentro do formulário*/
+        form input, form textarea {
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #3afae0;
+            border-radius: 20px; 
+        }
+
+        /*Estilizaçao dos "inputs" e das "textareas" dentro do formulário quando estão em foco*/
+        form input:focus, form textarea:focus {
+            outline: unset ;
+            background-color: lightblue;
+        }
+
+        /*Estilização do botão do formulário*/
+        form button{
+            background-color: #3afae0;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    
+        /*Estilização das "labels" do formulário"*/
+        form label{
+            margin-left: 20px;
+            margin-bottom: 3px;
+        }
+
+        /*Estiliazação da tag h1 na classe anuncio*/
+        h1.anuncio{ 
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        }
+
+
+    </style>
+    <!--Encerrando estilização-->
+
+</head>
+
+<!-- Corpo da Página -->
+<body>
+    <!--Cabeçalho-->
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Seu Contato</h1>
+        <br>
+
+    </header>
+    
+    <!--Menu-->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="MinhaFomação.html">Minhas Formações</a></li>
+            <li><a href="Portifólio.html">Portifólio</a></li>
+            <li><a href="SobreMim.html">Biografia</a></li>
+        </ul>
+    </nav>
+
+    <!--Quebra de linhas-->
+    <br><br><br><br>
+
+    <section>
+    <!-- Criação do formulário para pegar informação de contato separano por divs -->
+        <form action="" method="post">
+            <h1 class="anuncio">Deixe seu contato:</h1>
+                <!--Pegando informação de nome-->
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Digite seu nome!"    name="nome" id="nome">
+            </div>
+                
+                <!--Pegando informação do email-->
+            <div>
+                <label for="Email">E-mail:</label>
+                <input type="Email" placeholder="Digite seu email!" name="email" id=""email>
+
+            </div>
+                <!-- Linha para que o usuário deixe alguma mensagem -->
+            <div>
+                <label for="mensagem">Deixe uma observação ou comentário:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="..." cols="30" rows="6"></textarea>
+            </div>
+                
+            <div>
+                    <!-- Botão para envio das informações -->
+                    <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+<!--Encerrando programa-->
+</html>

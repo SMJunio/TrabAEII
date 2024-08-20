@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Configurações da página-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
+    <title>Atividade Prática</title>
+
+    <!--Estilização da página-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+
+        .container {
+            display: grid;
+        }
+
+        /*Estilizando Cabeçalho*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #3afae0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /*Estilizando o menu*/
+        .menu {
+            display: flex;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 12;
+            margin: 10px;
+            padding: 10px;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 5px;
+            
+        }
+
+        /*Estilizando lista ordenada*/
+        ul {
+            list-style-type: none;
+            color: #3afae0;
+        }
+
+        /*Estilizando a tag "a" e o link*/
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #3afae0 2px;
+            border-radius:10px;
+            margin:10px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+
+        /*estilizando a tag "li", ou seja, cada linha" */
+        li {
+            float: left;
+        }
+
+        /*Estilizando quando o mouse passa por cima de do que está dentro da tag "a"*/
+        a:hover {
+            background-color: #3afae0;
+            color: white;
+        }
+
+    </style>
+    <!--Finalizando estilização-->
+
+</head>
+
+<!--Corpo da página-->
+<body>
+
+    <!--Cabeçalho da página-->
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Links Para acessar</h1>
+        <br>
+
+    </header>
+
+    <!--Menu da página-->
+    <nav class="container menu">
+        <ul>
+            <li><a href="contato.html">Seu contato</a></li>
+            <li><a href="MinhaFomação.html">Minhas Formações</a></li>
+            <li><a href="Portifólio.html">Portifólio</a></li>
+            <li><a href="SobreMim.html">Biografia</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Título da página-->
+    <title>Sobre mim</title>
+
+    <!--Estilização da página-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        /*Estilização do cabeçalho*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #3afae0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            
+        }
+
+        /*Estilizização do Menu*/
+        .menu {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        /*Estilização da imagem*/
+        .imagem_eu {
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+        }
+
+
+        /*Estilização do que está na classe principal*/
+        .principal {
+            grid-column-start: 2;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        /*Estilização específica da lista não ordenada*/
+        ul {
+            list-style-type: none;
+            color: #3afae0;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #3afae0 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            color:black;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #3afae0;
+            color: white;
+        }
+
+
+        /*Alinhando o que está no id titulo na esquerda*/
+        #titulo {
+            text-align: left;
+        }
+
+
+        /*Tornando a página responsiva*/
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_eu {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+
+        /*Estilizando a borda da imagem*/
+        img{
+            border-radius: 20px;
+            border: 2px solid #3afae0;
+        }
+        
+        /*Estilizando o título dentro da tag "h1"*/
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+        }
+
+
+        /*Estilizando o que esta dentro da tag aside*/
+        aside {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+
+        
+        /*Estilizando o que está dentro da tag p*/
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+        }
+    </style>
+</head>
+<!--Encerrando a estilização-->
+
+<body>
+    <!--Cabeçalho-->
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Fatos sobre mim</h1>
+        <br>
+
+    </header>
+    
+    <!--Menu-->
+    <nav class="container menu">
+        <ul>
+            <li><a href="contato.html">Seu contato</a></li>
+            <li><a href="MinhaFomação.html">Minhas Formações</a></li>
+            <li><a href="Portifólio.html">Portifólio</a></li>
+            <li><a href="index.html">Página principal</a></li>
+        </ul>
+    </nav>
+
+    <!--Imagem e o que está na lateral da página-->
+    <div class="container wrapper">
+        <aside class="imagem_eu">
+            <!--Imagem-->
+            <img src="eu2.jpeg" width="350px">
+            <div class="infos">
+                <!--Informações da página-->
+                <p><strong>Ocupação:</strong> Robótica </p>
+
+                    <strong>Data de Nascimento:</strong> 17/06/2004
+                </p>
+            </div>
+        </aside>
+
+        <!--Section da página-->
+        <section class="principal">
+            <!--Texto prinpal da página-->
+            <h1 id="titulo">
+                Samuel Junio
+            </h1>
+            <p>
+                No meu dia a dia, trabalho das 8:00 às 17:40. Então chego em casa ali por volta das 18:40, como e descanso para começar a aula da faculdade as 19:30. A aula da faculdade dura até cerca de 21:30, 22:00. Depois disso, separo um tempo pra jantar e fazer o que seria meu hobbie.
+            </p>
+            <p>
+                Meu hobbie na verdade é relacionado à igreja. Então é um tempo de estudo de violão, porque toco na igreja e um tempo de estudo biblíco mesmo. São normalmente para compromissos, mas como gosto de estar fazendo isso, acaba sendo um momento bom de prazer e de saúde mental. 
+            </p>
+            <p>
+                No mais e na medida do possível são os clássicos, gastando tempo vendo tv ou então nas redes sociais
+                até ali umas 23:30 (deveria pelo menos), para estar disposto ao próximo dia que começa normalmente as 5:30. 
+            </p>
+        </section>
+    </div>
+</body>
+<!--Finalizando o programa-->
+</html>
