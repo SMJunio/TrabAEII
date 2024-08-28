@@ -4,4 +4,13 @@ html{
     box-sizing: border-box;
 }
 
+main{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+.img1{
+    height: 100%
+    width: auto;
+}
