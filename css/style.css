@@ -1,3 +1,17 @@
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .row {
+    margin: 0;
+  }
+
+  .container {
+    padding: 70px 0;
+  }
+  
+
 html{
     margin:0; 
     padding:0; 
@@ -9,22 +23,89 @@ main{
     padding: 0px;
     box-sizing: border-box;
 }
+/* Slider */
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider.carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300px;
+    margin-bottom: 100px;
+}
+
+.main-btn {
+    background-color: #4cbd49;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+  }
+  
+  .main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #4cbd49;
+  }
+
+  .carousel-indicators .active{
+    background-color: #4cbd49;
+
+  }
+
+
+.main-title {
+    color: #ffffff;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .main-title::after {
+    content: "";
+    border-top: 2px solid #f0efef;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+  }
+
+
 
 /*  Footer */
 
 #contact-area {
     text-align: center;
+    background-color:#49637b;
 }
 
 .contact-box{
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #3eC1d5;
+    border-bottom: 1px solid aliceblue; 
 }
 
 .contact-box i{
-    color: #444;
-    border: solid 1px #444;
+    color: #ffffff;
+    border: solid 1px #ffffff;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -39,7 +120,7 @@ main{
 
 .contact-title {
     font-weight: bold;
-    color: #3eC1d5;
+    color: #4cbd49;
 
 }
 
@@ -50,7 +131,7 @@ main{
 
 #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
     margin-bottom: 15px;
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 #contact-form .main-btn {
@@ -61,13 +142,13 @@ main{
 }
 
 #contact-form .main-btn:hover{
-    color: white
+    color: #4cbd49;
 }
 
 /* Copy */
 
 #copy-area{
-    background-color: green
+    background-color: #486974
 }
 
 #copy-area .container{
@@ -81,10 +162,79 @@ main{
 
 #copy-area .container a{
     font-weight: bold;
-    color: aliceblue;
+    color: #4cbd49;
 }
 
 #copy-area .container a:hover{
     text-decoration: none;
-    color:aquamarine
+    color:aliceblue;
+}
+
+/* responsive */
+
+@media(max-width: 768px){
+
+    /* geral */
+    .container {
+        padding: 20px 0;
+    }
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption{
+        left:10%;
+        right:10%;
+    }
+
+}
+
+
+@media(max-width: 425px){
+
+ /* slider */
+ #mainSlider{
+    margin-top: 90px;
+ }
+
+ #mainSlider .carousel-caption{
+    top:5%
+ } 
+
+ #mainSlider .carousel-caption h2{
+    font-size: 18px;
+    margin-bottom: 40px;
+ } 
+
+ #mainSlider .carousel-caption p{
+    display: none;
+ } 
+
+ .carousel-caption .main-btn{
+    font-size: 14px;
+ }
+ 
+ /* contact */
+
+ .contact-box{
+    border:none;
+    margin-bottom: 0;
+
+ }
+
+ .main-title{
+    font-size: 30px;
+ }
+
 }
