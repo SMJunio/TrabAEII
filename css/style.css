@@ -10,7 +10,8 @@ body {
   .container {
     padding: 70px 0;
   }
-  
+
+
 
 html{
     margin:0; 
@@ -23,6 +24,14 @@ main{
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* Navbar */
+#logo {
+    width: 140px;
+  }
+
+  
+
 /* Slider */
 .container-fluid {
     padding: 0;
@@ -71,12 +80,22 @@ main{
 
   }
 
+/* Main */
+
+main{
+    padding-top: 15px;
+     
+}
+.container-fluid{
+    padding-top: 0px;
+}
 
 .main-title {
     color: #ffffff;
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .main-title::after {
@@ -90,20 +109,66 @@ main{
 
   #title{
     color: #486974;
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   #title::after {
     border-top: 2px solid #486974;
-    top: 90px;
+    top: 105px;
     left: 42.5%;
   }
 
+  #all_main{
+    margin-top: 0px;
+  }
 
+  /* Aside */
+  aside {
+    padding-left: 10px; 
+    padding:0px; 
+    background-color: darkgreen; 
+    margin-top: 30px; 
+    margin-bottom: 5px; 
+    margin-left: 0px;
+    border-radius: 30px;
+    border-left: #4cbd49;
+    height: 750px;
+    
+  }
 
+  .aside-title{
+    padding-top: 5px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .aside-title::after{
+    content: "";
+    border-top: 2px solid #f0efef;
+    width: 30%;
+    position: absolute;
+    top: 70px;
+    left: 35.5%;
+  }
+
+    #p_text{
+        color:aliceblue;
+        margin-top: 30px;
+        font-size: 17px;
+    }
+
+    #aboutus{
+        width: 250px;
+        margin: 5px;
+        content:"";
+        border: 0px;
+        border-radius: 10px;
+
+    }
 
 /*  Footer */
-
 #contact-area {
     text-align: center;
     background-color:#49637b;
@@ -133,12 +198,10 @@ main{
 .contact-title {
     font-weight: bold;
     color: #4cbd49;
-
 }
 
 #msg-box p{
     font-size: 22px;
-
 }
 
 #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
@@ -210,6 +273,31 @@ main{
         right:10%;
     }
 
+    /* ASIDE */
+    aside{
+        height: auto;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+
+    #aboutus{
+        width: 400px;
+        margin: 5px;
+        margin-left: 20%;
+        content:"";
+
+    }
+
+    .aside-title::after{
+        content: "";
+        border-top: 2px solid #f0efef;
+        width: 15%;
+        position: absolute;
+        top: 70px;
+        left: 42.5%;
+      }
+    
+
 }
 
 
@@ -249,6 +337,15 @@ main{
     font-size: 30px;
  }
 
+ #aboutus{
+    width: 400px;
+    margin: 5px;
+    margin-left: 10%;
+    content:"";
+    margin-right: 10%;
+
+}
+
 }
 
 
@@ -275,6 +372,66 @@ main{
     .carousel-caption{
         left:10%;
         right:10%;
+    }
+
+    /* Main */
+
+    #title{
+        color: #486974;
+        font-size: 32px;
+        
+      }
+    
+      #title::after {
+        border-top: 2px solid #486974;
+        top: 90px;
+        left: 42.5%;
+      }
+    
+    
+    /* Aside */
+  aside {
+    padding-left: 10px; 
+    padding:0px; 
+    background-color: darkgreen; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    margin-left: 0px;
+    border-radius: 30px;
+    border-left: #4cbd49;
+    height: 700px;
+    
+  }
+
+  .aside-title{
+    padding-top: 5px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+  }
+
+  .aside-title::after{
+    content: "";
+    border-top: 2px solid #f0efef;
+    width: 30%;
+    position: absolute;
+    top: 65px;
+    left: 35.5%;
+  }
+
+    #p_text{
+        color:aliceblue;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    #aboutus{
+        width: 250px;
+        margin: 5px;
+        content:"";
+        border: 0px;
+        border-radius: 10px;
+
     }
 
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoBytes</title>
+    <title>EcoBytes - Home</title>
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +14,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css\style.css">
 
-
-
-
 </head>
-<body>
+<body class="bg-light">
+  
   <!-- HEADER -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg" style="background-color: rgb(17, 153, 47);" >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg contact-area" style="background-color: rgb(17, 153, 47);" >
       <a class="navbar-brand"  href="#">
-        <img src="assets/Logo02.svg" alt="Logo">
+        <img src="assets/Logo02.svg" alt="Logo" id="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -35,173 +33,207 @@
           <a class="nav-item nav-link disabled" href="#">Desativado</a>
         </div>
       </div>
-  </nav>
+    </nav>
 
   <!-- Main -->
-  <div class="container-fluid">
-    <div class="row mx-lg-n3">
+    <div class="container-fluid">
+      <div class="row mx-md-n3">
 
-      <div id="mainSlider" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-          <li data-target="#mainSlider" data-slide-to="1" class="active"></li>
-          <li data-target="#mainSlider" data-slide-to="2" class="active"></li>          
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets\banner11.jpg" class="d-block w-100" alt="TI-verde-sustentabilidade">
-            <div class="carousel-caption d-md-block">
-              <h2>O que é o TI-Verde?</h2>
-              <p>É possível associar o TI com a sustentabilidade... Vamos te mostrar!</p>
-              <a href="#" class="main-btn">Ver sobre o assunto</a>
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="2" class="active"></li>          
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets\banner11.jpg" class="d-block w-100" alt="TI-verde-sustentabilidade">
+              <div class="carousel-caption d-md-block">
+                <h2>O que é o TI-Verde?</h2>
+                <p>É possível associar o TI com a sustentabilidade... Vamos te mostrar!</p>
+                <a href="#" class="main-btn">Ver sobre o assunto</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets\banner4.jpg" class="d-block w-100" alt="Lucratividade no TI-Verde">
+              <div class="carousel-caption d-md-block">
+                <h2>Consigo aplicar o TI Verde na minha empresa?</h2>
+                <p>Nossa equipe está pronta para te ajudar!</p>
+                <a href="indexEmpresa.html" class="main-btn">Entre em contato</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets\banner10.jpg" class="d-block w-100" alt="Sustentabilidade">
+              <div class="carousel-caption d-md-block">
+                <h2>Como usar o TI Verde no nosso dia a dia?</h2>
+                <p>Conte conosco, vamos te dar algumas recomendações!</p>
+                <a href="index_cpf.html" class="main-btn">Ver sobre o assunto</a>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets\banner4.jpg" class="d-block w-100" alt="Lucratividade no TI-Verde">
-            <div class="carousel-caption d-md-block">
-              <h2>Consigo aplicar o TI Verde na minha empresa?</h2>
-              <p>Nossa equipe está pronta para te ajudar!</p>
-              <a href="indexEmpresa.html" class="main-btn">Entre em contato</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets\banner10.jpg" class="d-block w-100" alt="Sustentabilidade">
-            <div class="carousel-caption d-md-block">
-              <h2>Como usar o TI Verde no nosso dia a dia?</h2>
-              <p>Conte conosco, vamos te dar algumas recomendações!</p>
-              <a href="index_cpf.html" class="main-btn">Ver sobre o assunto</a>
-            </div>
-          </div>
+          <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
 
-      <div class="col-lg-9 col-sm-12 col-md-8 py-3 px-lg-5 bg-light" style="padding-left: 2%;">
-        <main class="main">
-          <div>
+        <div class="col-lg-9 col-sm-12 col-md-8 py-3 px-lg-5 " id="all_main" style="padding-left: 2%;">
+          <main class="main">
             <div>
-              <h1 class="main-title" id="title">TI Verde - Sua importância nos dias hoje </h1>
-              <p class="lead">Desde os tempos antigos, a humanidade tem explorado intensamente os recursos naturais, muitas vezes sem considerar o impacto ambiental. A Revolução Industrial acelerou o desenvolvimento tecnológico, mas também trouxe graves consequências, como poluição e esgotamento de recursos. Ao longo da história, essa falta de preocupação com o meio ambiente gerou desafios que ainda enfrentamos hoje, como o desmatamento e as mudanças climáticas <br>
-              </p>
-              <p class="lead">Com o avanço da tecnologia, a área de TI tem se tornado cada vez mais importante e não ficou de fora desse contexto. A busca por práticas mais sustentáveis, como o TI Verde, reflete a necessidade de alinhar o progresso tecnológico com a preservação ambiental <br>
-              </p>
-              <p class="lead">Para saber mais sobre o TI Verde e sobre as boas práticas que o envolve, leia esse blog. E tenho certeza que ele vai te ajudar a promover um futuro mais sustentável na área de tecnologia. Seja para o seu dia a dia, ou para a sua empresa e/ou negócio. 
-              Primeiro, o que é TI Verde? <br><br>
-              </p>
-            </div>
-            <div>
-              <h3>O que é TI Verde? </h3><br>
-              <p class="lead">
-                TI Verde, ou Green IT, refere-se ao uso sustentável das tecnologias da informação para reduzir o impacto ambiental. Isso envolve práticas para economizar energia, reduzir resíduos eletrônicos e promover a reciclagem de equipamentos. <br><br>
-                As principais áreas do TI Verde incluem:
-              </p>
-              <p class="lead">
-                <ol class="lista_ordenada">
-                  <li><b>Eficiência energética: </b> Reduzir o consumo de energia em servidores e dispositivos, utilizando equipamentos mais eficientes e fontes de energia renováveis.</li><br>
-                  <li><b>Gestão de Resíduos Eletrônicos: </b> Melhorar o descarte e a reciclagem de dispositivos tecnológicos para minimizar o lixo eletrônico e prolongar o ciclo de vida dos produtos.</li><br>
-                  <li><b>Computação em Nuvem: </b> Utilizar soluções baseadas em nuvem para diminuir a necessidade de infraestrutura física e otimizar o uso de recursos.</li><br>
-                  <li><b>Responsabilidade Social Corporativa: </b> Mostrar compromisso com a sustentabilidade e melhorar a imagem pública da empresa ao adotar práticas ambientalmente responsáveis.</li>
-                </ol>
-                <p class="lead">
-                O TI Verde é essencial para enfrentar o impacto ambiental das tecnologias de informação, ajudando a reduzir custos e promover um futuro mais sustentável. 
+              <div class="lead">
+                <h1 class="main-title" id="title">TI Verde - Sua importância nos dias hoje </h1>
+                <p>
+                  Desde os tempos antigos, a humanidade tem explorado intensamente os recursos naturais, muitas vezes sem considerar o impacto ambiental. A Revolução Industrial acelerou o desenvolvimento tecnológico, mas também trouxe graves consequências, como poluição e esgotamento de recursos. Ao longo da história, essa falta de preocupação com o meio ambiente gerou desafios que ainda enfrentamos hoje, como o desmatamento e as mudanças climáticas <br>
                 </p>
-              </p>
+                <p>
+                  Com o avanço da tecnologia, a área de TI tem se tornado cada vez mais importante e não ficou de fora desse contexto. A busca por práticas mais sustentáveis, como o TI Verde, reflete a necessidade de alinhar o progresso tecnológico com a preservação ambiental <br>
+                </p>
+                <p>
+                  Para saber mais sobre o TI Verde e sobre as boas práticas que o envolve, leia esse blog. E tenho certeza que ele vai te ajudar a promover um futuro mais sustentável na área de tecnologia. Seja para o seu dia a dia, ou para a sua empresa e/ou negócio. 
+              
+                  Primeiro, o que é TI Verde? <br><br>
+                </p>
+              </div>
+              <div class="lead">
+                <h3>O que é TI Verde? </h3><br>
+                <p>
+                  TI Verde, ou Green IT, refere-se ao uso sustentável das tecnologias da informação para reduzir o impacto ambiental. Isso envolve práticas para economizar energia, reduzir resíduos eletrônicos e promover a reciclagem de equipamentos. <br><br>
+                  As principais áreas do TI Verde incluem:
+                </p>
+                <p>
+                  <ol>
+                    <li>
+                      <b>Eficiência energética: </b> Reduzir o consumo de energia em servidores e dispositivos, utilizando equipamentos mais eficientes e fontes de energia renováveis.
+                    </li><br>
+                    <li>
+                      <b>Gestão de Resíduos Eletrônicos: </b> Melhorar o descarte e a reciclagem de dispositivos tecnológicos para minimizar o lixo eletrônico e prolongar o ciclo de vida dos produtos.
+                    </li><br>
+                    <li>
+                      <b>Computação em Nuvem: </b> Utilizar soluções baseadas em nuvem para diminuir a necessidade de infraestrutura física e otimizar o uso de recursos.
+                    </li><br>
+                    <li>
+                      <b>Responsabilidade Social Corporativa: </b> Mostrar compromisso com a sustentabilidade e melhorar a imagem pública da empresa ao adotar práticas ambientalmente responsáveis.
+                    </li>
+                  </ol>
+                  <p>
+                  O TI Verde é essencial para enfrentar o impacto ambiental das tecnologias de informação, ajudando a reduzir custos e promover um futuro mais sustentável. 
+                  </p>
+                </p>
+              </div><br>
+              <div class="lead">
+                <h3>A poluição advinda da tecnologia...</h3><br>
+                <p>A poluição também é presente nos dias de hoje quando é relacionado à tecnologia, refletindo o impacto ambiental do avanço tecnológico. Com o aumento do uso de dispositivos eletrônicos e a expansão das infraestruturas de tecnologia, surgem várias formas de poluição. Aqui estão alguns aspectos importantes:</p>
+                <ol>
+                  <li><h4>Poluição Energética</h4>
+                    <ul>
+                      <li>
+                        <b>Consumo de Energia:</b> Data centers, servidores e dispositivos eletrônicos consomem grandes quantidades de energia. A demanda por energia para manter e operar essas tecnologias contribui significativamente para a emissão de gases de efeito estufa, especialmente quando a energia provém de fontes não renováveis, como carvão e petróleo.
+                      </li>
+                      <li>
+                        <b>Aquecimento Global:</b>O alto consumo de energia está diretamente ligado ao aquecimento global. A produção e o uso de energia em larga escala resultam na emissão de dióxido de carbono e outros gases de efeito estufa, exacerbando as mudanças climáticas.
+                      </li>
+                    </ul>
+                  </li><br>
+                  <li><h4>Poluição por Resíduos Eletrônicos</h4>
+                    <ul>
+                      <li>
+                        <b>Descarte de Equipamentos: </b> A rápida obsolescência de dispositivos eletrônicos leva a um aumento no volume de resíduos eletrônicos, como computadores, smartphones e eletrodomésticos. Esses resíduos muitas vezes são descartados inadequadamente, contribuindo para a poluição do solo e da água.
+                      </li>
+                      <li>
+                        <b>Substâncias Tóxicas: </b> Equipamentos eletrônicos contêm materiais perigosos, como chumbo, mercúrio e cádmio, que podem se liberar no meio ambiente se não forem reciclados corretamente. Essas substâncias tóxicas podem contaminar solos e fontes de água, afetando a saúde humana e animal.
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <b>Processos de Fabricação: </b> A produção de dispositivos eletrônicos envolve o uso de vários produtos químicos e metais pesados. Os processos de fabricação podem liberar poluentes atmosféricos e resíduos químicos que afetam o meio ambiente.
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <b>Descarte e Reciclagem: </b> : Durante o processo de reciclagem inadequada, produtos químicos nocivos podem ser liberados, exacerbando a poluição e afetando as comunidades ao redor dos locais de reciclagem.
+                      </li>
+                    </ul>
+                  </li><br>
+                  <li><h4>Poluição visual e espacial</h4>
+                    <ul>
+                      <li>
+                        <b>Infraestrutura de Tecnologia: </b> A construção de data centers e torres de telecomunicações pode ter um impacto visual no ambiente, alterando paisagens naturais e urbanas. Além disso, a instalação de grandes infraestruturas pode afetar ecossistemas locais e habitats naturais.
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <b>Lixo Espacial: </b> A crescente quantidade de satélites e detritos espaciais também contribui para a poluição do espaço. Lixo espacial pode colidir com satélites ativos e causar problemas para futuras missões espaciais.
+                      </li>
+                    </ul>
+                  </li><br>
+                  <li><h4>Impactos na Saúde</h4>
+                    <ul>
+                      <li><b>Poluição do Ar e da Água:</b> A emissão de poluentes e a liberação de substâncias químicas podem afetar a qualidade do ar e da água, resultando em problemas de saúde para humanos e animais. Doenças respiratórias, câncer e contaminação de alimentos são alguns dos riscos associados à poluição causada pela TI.</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p class="lead">À medida que a tecnologia se torna uma parte central de nossas vidas e negócios, o impacto ambiental associado ao setor de TI também cresce significativamente. O conceito de TI Verde surge como uma resposta essencial a esses desafios, promovendo práticas que buscam minimizar os efeitos negativos da tecnologia no meio ambiente. </p>
+              </div>
+              <div><br>
+                <h3>A Importância do TI Verde</h3>
+      
+                <p class="lead">Aqui estão alguns pontos-chave sobre a importância do TI Verde:</p><br>
+                
+                <h4>1. Redução do Impacto Ambiental</h4>
+                <p class="lead">Os centros de dados e dispositivos tecnológicos consomem uma quantidade significativa de energia, contribuindo para a emissão de gases de efeito estufa e o esgotamento de recursos naturais. O TI Verde visa reduzir o consumo de energia e diminuir a pegada de carbono das operações tecnológicas. Ao adotar práticas sustentáveis, como o uso de fontes de energia renováveis e a eficiência energética, podemos mitigar esses impactos.</p><br>
+                
+                <h4>2. Economia de Custos</h4>
+                <p class="lead">A implementação de práticas de TI Verde pode levar a economias substanciais para empresas e indivíduos. A eficiência energética reduz o custo com eletricidade, enquanto a gestão adequada de resíduos eletrônicos pode diminuir os custos associados ao descarte e à compra de novos equipamentos. Além disso, a virtualização e o uso da computação em nuvem podem otimizar o uso de recursos e reduzir a necessidade de infraestrutura física, economizando espaço e custos operacionais.</p><br>
+
+                <h4>3. Melhoria da Imagem Corporativa</h4>
+                <p class="lead">Para as organizações, adotar práticas de TI Verde pode melhorar significativamente a imagem pública e a reputação da empresa. Consumidores e clientes estão cada vez mais conscientes das questões ambientais e tendem a apoiar empresas que demonstram compromisso com a sustentabilidade. Isso pode resultar em uma vantagem competitiva, atraindo clientes que valorizam a responsabilidade ambiental.</p><br>
+
+                <h4>4. Conformidade com Regulamentações e Normas</h4>
+                <p class="lead">Governos e organismos reguladores estão impondo cada vez mais regulamentações ambientais que afetam o setor de TI. Implementar práticas de TI Verde pode ajudar as empresas a cumprir essas regulamentações, evitando multas e sanções. Além disso, a conformidade com normas de sustentabilidade pode facilitar a obtenção de certificações ambientais e de eficiência energética.</p><br>
+
+                <h4>5. Preservação de Recursos Naturais</h4>
+                <p class="lead">A gestão responsável dos resíduos eletrônicos e a escolha de produtos com menor impacto ambiental contribuem para a preservação dos recursos naturais. A reciclagem e o design de produtos com ciclos de vida mais longos ajudam a reduzir a demanda por matérias-primas e a minimizar o desperdício. Isso é crucial para garantir que os recursos naturais não se esgotem e que o meio ambiente seja protegido para as futuras gerações.</p><br>
+
+                <h4>6. Promoção da Inovação Sustentável</h4>
+                <p class="lead">O foco em TI Verde incentiva a inovação na criação de novas tecnologias e soluções mais sustentáveis. Isso pode levar ao desenvolvimento de novos produtos e serviços que sejam mais eficientes, menos poluentes e mais alinhados com os princípios da economia circular. A inovação sustentável também pode abrir novas oportunidades de mercado e promover avanços tecnológicos benéficos para o meio ambiente.</p><br>
+
+                <h4>7. Benefícios para a Saúde e o Bem-Estar</h4>
+                <p class="lead">A redução da poluição e a gestão adequada de resíduos eletrônicos têm benefícios diretos para a saúde humana e o bem-estar das comunidades. Menos poluição do ar e da água reduz o risco de doenças relacionadas ao meio ambiente, enquanto a gestão de resíduos ajuda a prevenir a contaminação do solo e dos recursos hídricos.</p>
+              </div>
+              <div><br>
+                <h3>Finalizando...</h3>
+                <p class="lead">
+                  Diante de tudo isso, criamos esse blog para te conscientizar, seja lá quem for, a respeito da tecnologia, do desenvolvimento sustentável. Te dando dicas para tornar isso parte do seu dia a dia. De maneira que viver a modernidade, viver o os avanços e desfrutar das suas inovações e benefícios também será uma ferramenta de contribuição social, de contribuição ao meio ambiente. E assim, tanto eu, quanto você, quanto a natureza e o ecossistema em geral, será mais feliz e grato! 
+                </p>
+
+              
+              </div>
+
+              
+              
             </div>
+          </main>
+        </div>
+      
+        <!-- ASIDE -->
+          <aside class="col-lg-3 col-md-4 py-3 px-3">
             <div>
-              <h3>A poluição advinda da tecnologia...</h3>
-              <p class="lead">A poluição também é presente nos dias de hoje quando é relacionado à tecnologia, refletindo o impacto ambiental do avanço tecnológico. Com o aumento do uso de dispositivos eletrônicos e a expansão das infraestruturas de tecnologia, surgem várias formas de poluição. Aqui estão alguns aspectos importantes:</p>
-              <ol>
-                <li>Poluição Energética
-                  <ul>
-                    <li><b>Consumo de Energia:</b> Data centers, servidores e dispositivos eletrônicos consomem grandes quantidades de energia. A demanda por energia para manter e operar essas tecnologias contribui significativamente para a emissão de gases de efeito estufa, especialmente quando a energia provém de fontes não renováveis, como carvão e petróleo.</li>
-                    <li><b>Aquecimento Global:</b>O alto consumo de energia está diretamente ligado ao aquecimento global. A produção e o uso de energia em larga escala resultam na emissão de dióxido de carbono e outros gases de efeito estufa, exacerbando as mudanças climáticas.</li>
-                  </ul>
-                </li><br>
-                <li>Poluição por Resíduos Eletrônicos
-                  <ul>
-                    <li><b>Descarte de Equipamentos: </b> A rápida obsolescência de dispositivos eletrônicos leva a um aumento no volume de resíduos eletrônicos, como computadores, smartphones e eletrodomésticos. Esses resíduos muitas vezes são descartados inadequadamente, contribuindo para a poluição do solo e da água.</li>
-                    <li><b>Substâncias Tóxicas: </b> Equipamentos eletrônicos contêm materiais perigosos, como chumbo, mercúrio e cádmio, que podem se liberar no meio ambiente se não forem reciclados corretamente. Essas substâncias tóxicas podem contaminar solos e fontes de água, afetando a saúde humana e animal.</li>
-                  </ul>
-                  <ul>
-                    <li><b>Processos de Fabricação: </b> A produção de dispositivos eletrônicos envolve o uso de vários produtos químicos e metais pesados. Os processos de fabricação podem liberar poluentes atmosféricos e resíduos químicos que afetam o meio ambiente.</li>
-                  </ul>
-                  <ul>
-                    <li><b>Descarte e Reciclagem: </b> : Durante o processo de reciclagem inadequada, produtos químicos nocivos podem ser liberados, exacerbando a poluição e afetando as comunidades ao redor dos locais de reciclagem.</li>
-                  </ul>
-                </li><br>
-                <li>Poluição visual e espacial
-                  <ul>
-                    <li><b>Infraestrutura de Tecnologia: </b> A construção de data centers e torres de telecomunicações pode ter um impacto visual no ambiente, alterando paisagens naturais e urbanas. Além disso, a instalação de grandes infraestruturas pode afetar ecossistemas locais e habitats naturais.</li>
-                  </ul>
-                  <ul>
-                    <li><b>Lixo Espacial: </b> A crescente quantidade de satélites e detritos espaciais também contribui para a poluição do espaço. Lixo espacial pode colidir com satélites ativos e causar problemas para futuras missões espaciais.</li>
-                  </ul>
-                </li><br>
-                <li>Impactos na Saúde
-                  <ul>
-                    <li><b>Poluição do Ar e da Água:</b> A emissão de poluentes e a liberação de substâncias químicas podem afetar a qualidade do ar e da água, resultando em problemas de saúde para humanos e animais. Doenças respiratórias, câncer e contaminação de alimentos são alguns dos riscos associados à poluição causada pela TI.</li>
-                  </ul>
-                </li>
-              </ol>
-              <p class="lead">À medida que a tecnologia se torna uma parte central de nossas vidas e negócios, o impacto ambiental associado ao setor de TI também cresce significativamente. O conceito de TI Verde surge como uma resposta essencial a esses desafios, promovendo práticas que buscam minimizar os efeitos negativos da tecnologia no meio ambiente. </p>
+                <h2 class="aside-title">Sobre nós</h2>
+                <div class="lead" id="p_text">
+                  <img src="assets/aboutus.png" alt="Sobre nós" class="aboutus" id="aboutus">
+                    <p>
+                      EcoBytes é uma plataforma dedicada a conscientizar e educar usuários sobre o uso sustentável de dispositivos tecnológicos. O objetivo é promover práticas que minimizem o impacto ambiental no setor de Tecnologia da Informação (TI), incentivando o uso eficiente de recursos e a gestão responsável de resíduos eletrônicos. <br><br>
+
+                      Além de oferecer dicas práticas para indivíduos e empresas, o EcoBytes apoia ONGs ambientais, facilitando a divulgação de suas mensagens e ensinamentos sobre sustentabilidade. A plataforma busca não apenas informar, mas também inspirar uma mudança de mentalidade, integrando práticas verdes ao cotidiano tecnológico e ajudando a criar um futuro mais equilibrado e sustentável.
+                    </p>
+              </div>
             </div>
-            <div><br>
-              <h3>A Importância do TI Verde</h3>
-    
-              <p class="lead">Aqui estão alguns pontos-chave sobre a importância do TI Verde:</p>
-              
-              <h4>1. Redução do Impacto Ambiental</h4>
-              <p class="lead">Os centros de dados e dispositivos tecnológicos consomem uma quantidade significativa de energia, contribuindo para a emissão de gases de efeito estufa e o esgotamento de recursos naturais. O TI Verde visa reduzir o consumo de energia e diminuir a pegada de carbono das operações tecnológicas. Ao adotar práticas sustentáveis, como o uso de fontes de energia renováveis e a eficiência energética, podemos mitigar esses impactos.</p><br>
-              
-              <h4>2. Economia de Custos</h4>
-              <p class="lead">A implementação de práticas de TI Verde pode levar a economias substanciais para empresas e indivíduos. A eficiência energética reduz o custo com eletricidade, enquanto a gestão adequada de resíduos eletrônicos pode diminuir os custos associados ao descarte e à compra de novos equipamentos. Além disso, a virtualização e o uso da computação em nuvem podem otimizar o uso de recursos e reduzir a necessidade de infraestrutura física, economizando espaço e custos operacionais.</p><br>
-
-              <h4>3. Melhoria da Imagem Corporativa</h4>
-              <p class="lead">Para as organizações, adotar práticas de TI Verde pode melhorar significativamente a imagem pública e a reputação da empresa. Consumidores e clientes estão cada vez mais conscientes das questões ambientais e tendem a apoiar empresas que demonstram compromisso com a sustentabilidade. Isso pode resultar em uma vantagem competitiva, atraindo clientes que valorizam a responsabilidade ambiental.</p><br>
-
-              <h4>4. Conformidade com Regulamentações e Normas</h4>
-              <p class="lead">Governos e organismos reguladores estão impondo cada vez mais regulamentações ambientais que afetam o setor de TI. Implementar práticas de TI Verde pode ajudar as empresas a cumprir essas regulamentações, evitando multas e sanções. Além disso, a conformidade com normas de sustentabilidade pode facilitar a obtenção de certificações ambientais e de eficiência energética.</p><br>
-
-              <h4>5. Preservação de Recursos Naturais</h4>
-              <p class="lead">A gestão responsável dos resíduos eletrônicos e a escolha de produtos com menor impacto ambiental contribuem para a preservação dos recursos naturais. A reciclagem e o design de produtos com ciclos de vida mais longos ajudam a reduzir a demanda por matérias-primas e a minimizar o desperdício. Isso é crucial para garantir que os recursos naturais não se esgotem e que o meio ambiente seja protegido para as futuras gerações.</p><br>
-
-              <h4>6. Promoção da Inovação Sustentável</h4>
-              <p class="lead">O foco em TI Verde incentiva a inovação na criação de novas tecnologias e soluções mais sustentáveis. Isso pode levar ao desenvolvimento de novos produtos e serviços que sejam mais eficientes, menos poluentes e mais alinhados com os princípios da economia circular. A inovação sustentável também pode abrir novas oportunidades de mercado e promover avanços tecnológicos benéficos para o meio ambiente.</p><br>
-
-              <h4>7. Benefícios para a Saúde e o Bem-Estar</h4>
-              <p class="lead">A redução da poluição e a gestão adequada de resíduos eletrônicos têm benefícios diretos para a saúde humana e o bem-estar das comunidades. Menos poluição do ar e da água reduz o risco de doenças relacionadas ao meio ambiente, enquanto a gestão de resíduos ajuda a prevenir a contaminação do solo e dos recursos hídricos.</p>
-            </div>
-            <div><br>
-              <h3>Finalizando...</h3>
-              <p class="lead">
-                Diante de tudo isso, criamos esse blog para te conscientizar, seja lá quem for, a respeito da tecnologia, do desenvolvimento sustentável. Te dando dicas para tornar isso parte do seu dia a dia. De maneira que viver a modernidade, viver o os avanços e desfrutar das suas inovações e benefícios também será uma ferramenta de contribuição social, de contribuição ao meio ambiente. E assim, tanto eu, quanto você, quanto a natureza e o ecossistema em geral, será mais feliz e grato! 
-              </p>
-
-            
-            </div>
-
-            
-            
-          </div>
-        </main>
+          </aside>
       </div>
-    
-      <!-- ASIDE -->
-      <div class="col-lg-3 col-sm-12 col-md-4 py-3 px-lg-5 bg" style="padding-left: 10px; padding:5px; background-color:darkgreen; margin-top: 0px; margin-bottom: 5px; border-radius: 2px;">
-        <aside class="lead" style="color: white"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos dolorum nihil officiis iure labore error dignissimos modi, libero, eaque debitis magnam mollitia deleniti laboriosam possimus sit ratione? Sed, doloremque.de ladin
-        </aside>
-      </div>
-    </div>
-  </div>
-
 
       <footer>
         <div id="contact-area">
@@ -246,7 +278,6 @@
           </div>
         </div>
       </footer>
-
       
     <!-- Scripts  -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
