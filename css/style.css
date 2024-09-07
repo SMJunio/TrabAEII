@@ -88,6 +88,18 @@ main{
     left: 42.5%;
   }
 
+  #title{
+    color: #486974;
+    
+  }
+
+  #title::after {
+    border-top: 2px solid #486974;
+    top: 90px;
+    left: 42.5%;
+  }
+
+
 
 
 /*  Footer */
@@ -205,7 +217,7 @@ main{
 
  /* slider */
  #mainSlider{
-    margin-top: 90px;
+    margin-top: 0px;
  }
 
  #mainSlider .carousel-caption{
@@ -252,7 +264,7 @@ main{
     }
 
     #mainSlider .carousel-caption h2{
-        font-size: 45px;
+        font-size: 40px;
     }
 
     #mainSlider .carousel-caption p{
