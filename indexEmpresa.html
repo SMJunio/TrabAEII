@@ -15,19 +15,19 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 
-<body>
+<body bg-light>
   <!-- HEADER -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg" style="background-color: rgb(17, 153, 47);" >
-      <a class="navbar-brand"  href="#">
-        <img src="assets/Logo02.svg" alt="Logo">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(17, 153, 47);" >
+      <a class="navbar-brand"  href="index.html">
+        <img src="assets/Logo02.svg" alt="Logo" id="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(Página atual)</span></a>
-          <a class="nav-item nav-link" href="indexEmpresa.html">Empresa</a>
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link active" href="indexEmpresa.html">Empresa<span class="sr-only">(Página atual)</span></a>
           <a class="nav-item nav-link" href="index_cpf.html">Dia a dia</a>
           <a class="nav-item nav-link disabled" href="index.html">Desativado</a>
         </div>
@@ -80,7 +80,7 @@
         </a>
       </div>
 
-      <div class="col-lg-9 col-sm-12 col-md-8 py-3 px-lg-5 bg-light" style="padding-left: 2%;" >
+      <div class="col-lg-9 col-sm-12 col-md-8 py-3 px-lg-5" style="padding-left: 2%;" >
         <main class="main">
             <div> 
                 <div class="lead">
@@ -301,14 +301,21 @@
       </div>
     
       <!-- ASIDE -->
-      <div class="col-lg-3 col-sm-12 col-md-4 py-3 px-lg-5 bg" style="padding-left: 10px; padding:5px; background-color:darkgreen; margin-top: 0px; margin-bottom: 5px; border-radius: 2px;">
-        <aside class="lead" style="color: white"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos dolorum nihil officiis iure labore error dignissimos modi, libero, eaque debitis magnam mollitia deleniti laboriosam possimus sit ratione? Sed, doloremque.de ladin
-        </aside>
-      </div>
+      <aside class="col-lg-3 col-md-4 py-3 px-3">
+        <div>
+            <h2 class="aside-title">Sobre nós</h2>
+            <div class="lead" id="p_text">
+              <img src="assets/aboutus.png" alt="Sobre nós" class="aboutus" id="aboutus">
+                <p>
+                  EcoBytes é uma plataforma dedicada a conscientizar e educar usuários sobre o uso sustentável de dispositivos tecnológicos. O objetivo é promover práticas que minimizem o impacto ambiental no setor de Tecnologia da Informação (TI), incentivando o uso eficiente de recursos e a gestão responsável de resíduos eletrônicos. <br><br>
+
+                  Além de oferecer dicas práticas para indivíduos e empresas, o EcoBytes apoia ONGs ambientais, facilitando a divulgação de suas mensagens e ensinamentos sobre sustentabilidade. A plataforma busca não apenas informar, mas também inspirar uma mudança de mentalidade, integrando práticas verdes ao cotidiano tecnológico e ajudando a criar um futuro mais equilibrado e sustentável.
+                </p>
+          </div>
+        </div>
+      </aside>
     </div>
   </div>
-
 
       <footer>
         <div id="contact-area">
@@ -354,7 +361,6 @@
         </div>
       </footer>
 
-      
     <!-- Scripts  -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

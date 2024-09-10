@@ -66,26 +66,24 @@ main{
     border-radius: 30px;
     border: 3px solid transparent;
     transition: .5s;
-  }
+}
   
-  .main-btn:hover {
+.main-btn:hover {
     text-decoration: none;
     color: #FFF;
     background-color: transparent;
     border-color: #4cbd49;
-  }
+}
 
-  .carousel-indicators .active{
+.carousel-indicators .active{
     background-color: #4cbd49;
-
-  }
+}
 
 /* Main */
-
 main{
     padding-top: 15px;
-     
 }
+
 .container-fluid{
     padding-top: 0px;
 }
@@ -96,77 +94,91 @@ main{
     font-size: 40px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+}
   
-  .main-title::after {
+.main-title::after {
     content: "";
     border-top: 2px solid #f0efef;
     width: 15%;
     position: absolute;
     top: 60px;
     left: 42.5%;
-  }
+}
 
-  #title{
+#title{
     color: #486974;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+}
 
-  #title::after {
+#title::after {
     border-top: 2px solid #486974;
     top: 105px;
     left: 42.5%;
+}
+
+#title_cpf{
+    color: #486974;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title_cpf::after {
+    border-top: 2px solid #486974;
+    top: 95px;
+    left: 42.5%;
   }
 
-  #all_main{
+#all_main{
     margin-top: 0px;
-  }
+}
 
   /* Aside */
-  aside {
-    padding-left: 10px; 
+aside {
+    padding-left: 0px; 
     padding:0px; 
     background-color: darkgreen; 
     margin-top: 30px; 
-    margin-bottom: 5px; 
-    margin-left: 0px;
+    /* margin-bottom: 0px;  */
+    /* margin-left: 0px; */
     border-radius: 30px;
     border-left: #4cbd49;
     height: 750px;
-    
-  }
+    text-align: center;
+}
 
-  .aside-title{
+.aside-title{
     padding-top: 5px;
     text-align: center;
     color: aliceblue;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+}
 
-  .aside-title::after{
+.aside-title::after{
     content: "";
     border-top: 2px solid #f0efef;
     width: 30%;
     position: absolute;
     top: 70px;
     left: 35.5%;
-  }
+}
 
-    #p_text{
-        color:aliceblue;
-        margin-top: 30px;
-        font-size: 17px;
-    }
+#p_text{
+    color:aliceblue;
+    margin-top: 30px;
+    font-size: 17px;
+}
 
-    #aboutus{
-        width: 250px;
-        margin: 5px;
-        content:"";
-        border: 0px;
-        border-radius: 10px;
+#aboutus{
+    width: 250px;
+    margin: 5px;
+    content:"";
+    border: 0px;
+    border-radius: 10px;
+}
 
-    }
+aside p{
+    text-align: left;
+}
 
 /*  Footer */
 #contact-area {
@@ -246,108 +258,15 @@ main{
 }
 
 /* responsive */
-
-@media(max-width: 768px){
-
-    /* geral */
-    .container {
-        padding: 20px 0;
-    }
-
-    /* slider */
-    #mainSlider .carousel-inner, #mainSlider .carousel-item{
-        height: auto;
-    }
-
-    #mainSlider .carousel-caption h2{
-        font-size: 28px;
-    }
-
-    #mainSlider .carousel-caption p{
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
-
-    .carousel-caption{
-        left:10%;
-        right:10%;
-    }
-
-    /* ASIDE */
+@media (max-width: 1440px){
     aside{
-        height: auto;
-        border-radius: 0px;
-        margin-top: 0;
-    }
-
-    #aboutus{
         width: 400px;
-        margin: 5px;
-        margin-left: 20%;
-        content:"";
-
     }
 
-    .aside-title::after{
-        content: "";
-        border-top: 2px solid #f0efef;
-        width: 15%;
-        position: absolute;
-        top: 70px;
-        left: 42.5%;
-      }
-    
-
+    aside p{
+        font-size: 17px;
+    }
 }
-
-
-@media(max-width: 425px){
-
- /* slider */
- #mainSlider{
-    margin-top: 0px;
- }
-
- #mainSlider .carousel-caption{
-    top:5%
- } 
-
- #mainSlider .carousel-caption h2{
-    font-size: 18px;
-    margin-bottom: 40px;
- } 
-
- #mainSlider .carousel-caption p{
-    display: none;
- } 
-
- .carousel-caption .main-btn{
-    font-size: 14px;
- }
- 
- /* contact */
-
- .contact-box{
-    border:none;
-    margin-bottom: 0;
-
- }
-
- .main-title{
-    font-size: 30px;
- }
-
- #aboutus{
-    width: 400px;
-    margin: 5px;
-    margin-left: 10%;
-    content:"";
-    margin-right: 10%;
-
-}
-
-}
-
 
 @media(max-width: 1280px){
     /* geral */
@@ -387,37 +306,51 @@ main{
         top: 90px;
         left: 42.5%;
       }
+
+      #title_cpf{
+        color: #486974;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
     
+    #title_cpf::after {
+        border-top: 2px solid #486974;
+        top: 95px;
+        left: 42.5%;
+    }
     
     /* Aside */
-  aside {
-    padding-left: 10px; 
-    padding:0px; 
-    background-color: darkgreen; 
-    margin-top: 5px; 
-    margin-bottom: 5px; 
-    margin-left: 0px;
-    border-radius: 30px;
-    border-left: #4cbd49;
-    height: 700px;
+    aside {
+        padding-left: 10px; 
+        padding:0px; 
+        background-color: darkgreen; 
+        margin-top: 5px; 
+        margin-bottom: 5px; 
+        margin-left: 0px;
+        border-radius: 30px;
+        border-left: #4cbd49;
+        height: 750px;
     
-  }
+    }
 
-  .aside-title{
-    padding-top: 5px;
-    text-align: center;
-    color: aliceblue;
-    font-size: 25px;
-  }
+    aside p{
+        font-size: 15px;
+    }
 
-  .aside-title::after{
-    content: "";
-    border-top: 2px solid #f0efef;
-    width: 30%;
-    position: absolute;
-    top: 65px;
-    left: 35.5%;
-  }
+    .aside-title{
+        padding-top: 5px;
+        text-align: center;
+        color: aliceblue;
+        font-size: 25px;
+    }
+
+    .aside-title::after{
+        content: "";
+        border-top: 2px solid #f0efef;
+        width: 30%;
+        position: absolute;
+        top: 65px;
+        left: 35.5%;
+    }
 
     #p_text{
         color:aliceblue;
@@ -431,7 +364,211 @@ main{
         content:"";
         border: 0px;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* geral */
+    .container {
+        padding: 20px 0;
+    }
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption{
+        left:10%;
+        right:10%;
+    }
+
+    /* ASIDE */
+    aside{
+        height:750px;
+        margin-top: 15px;
+    }
+
+    #aboutus{
+        width: 225px;
+        margin: 0px;
+        margin-bottom: 10px;
+        content:"";
+    }
+
+    .aside-title::after{
+        content: "";
+        border-top: 2px solid #f0efef;
+        width: 15%;
+        position: absolute;
+        top: 70px;
+        left: 42.5%;
+    }
+
+}
+
+@media(max-width: 768px){
+    aside{
+        border-radius: 20px;
+        height: 725px;
+        margin-bottom: 0px;
+    }
+
+    aside p{
+        font-size: 14px;
+    }
+
+    #aboutus{
+        width: 200px;
 
     }
 
+    .aside-title::after{
+        top: 8%
+    }
+
+     /* geral */
+     .container {
+        padding: 20px 0;
+    }
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption{
+        left:10%;
+        right:10%;
+    }
+
+    #title:after{
+        top: 130px;
+
+    }
+
+
+}
+
+
+@media(max-width: 425px){
+  /* geral */
+  p, li{
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h2 { 
+    font-size: 25px;
+  }
+
+  h4{
+    font-size: 18px;
+  }
+
+ /* slider */
+ #mainSlider{
+    margin-top: 0px;
+ }
+
+ #mainSlider .carousel-caption{
+    top:15%
+ } 
+
+ #mainSlider .carousel-caption h2{
+    font-size: 18px;
+    margin-bottom: 40px;
+ } 
+
+ #mainSlider .carousel-caption p{
+    display: none;
+ } 
+
+ .carousel-caption .main-btn{
+    font-size: 14px;
+ }
+ 
+ /* contact */
+ .contact-box{
+    border:none;
+    margin-bottom: 0;
+ }
+
+ .main-title{
+    font-size: 30px;
+ }
+
+/* aside */
+aside{
+    border-radius: 0;
+    height: 700px;
+    margin-bottom: 0;
+}
+
+#aboutus{
+    width: 300px;
+
+}
+
+.main-btn {
+    background-color: #4cbd49;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 10px 20px; 
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+  
+.main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #4cbd49;
+}
+
+#title{
+    font-size: 28px;
+}
+
+#title::after {
+    border-top: 2px solid #486974;
+    top: 120px;
+    left: 42.5%;
+ }
+
+
+#title_cpf{
+    color: #486974;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+}
+
+#title_cpf::after {
+    border-top: 2px solid #486974;
+    top: 90px;
+    left: 42.5%;
+}
 }
