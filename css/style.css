@@ -28,9 +28,7 @@ main{
 /* Navbar */
 #logo {
     width: 140px;
-  }
-
-  
+}
 
 /* Slider */
 .container-fluid {
@@ -137,8 +135,6 @@ aside {
     padding:0px; 
     background-color: darkgreen; 
     margin-top: 30px; 
-    /* margin-bottom: 0px;  */
-    /* margin-left: 0px; */
     border-radius: 30px;
     border-left: #4cbd49;
     height: 750px;
@@ -169,7 +165,7 @@ aside {
 }
 
 #aboutus{
-    width: 250px;
+    width: 350px;
     margin: 5px;
     content:"";
     border: 0px;
@@ -260,11 +256,15 @@ aside p{
 /* responsive */
 @media (max-width: 1440px){
     aside{
-        width: 400px;
+        width: 500px;
     }
 
     aside p{
-        font-size: 17px;
+        font-size: 15px;
+    }
+
+    #aboutus{
+        width: 300px;
     }
 }
 
@@ -298,7 +298,6 @@ aside p{
     #title{
         color: #486974;
         font-size: 32px;
-        
       }
     
       #title::after {
@@ -329,7 +328,6 @@ aside p{
         border-radius: 30px;
         border-left: #4cbd49;
         height: 750px;
-    
     }
 
     aside p{
@@ -519,6 +517,12 @@ aside p{
     font-size: 30px;
  }
 
+ .main-title::after {
+    top: 90px;
+   
+}
+
+
 /* aside */
 aside{
     border-radius: 0;
@@ -571,4 +575,6 @@ aside{
     top: 90px;
     left: 42.5%;
 }
+
+
 }
