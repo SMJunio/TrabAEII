@@ -11,8 +11,6 @@ body {
     padding: 70px 0;
   }
 
-
-
 html{
     margin:0; 
     padding:0; 
@@ -174,6 +172,7 @@ aside {
 
 aside p{
     text-align: left;
+    padding-top: 10px;
 }
 
 /*  Footer */
@@ -259,6 +258,13 @@ aside p{
         font-size: 15px;
     }
 
+    #aboutus{
+        width: 300px;
+        margin-bottom: 5px;
+        content:"";
+        border: 0px;
+        border-radius: 10px;
+    }
 }
 
 
@@ -276,7 +282,7 @@ aside p{
     }
 
     #aboutus{
-        width: 300px;
+        width: 275px;
     }
 }
 
@@ -369,7 +375,7 @@ aside p{
     }
 
     #aboutus{
-        width: 250px;
+        width: 225px;
         margin: 5px;
         content:"";
         border: 0px;
@@ -434,8 +440,8 @@ aside p{
 
 @media(max-width: 768px){
     aside{
-        border-radius: 20px;
-        height: 725px;
+        border-radius: 0px;
+        height: 625px;
         margin-bottom: 0px;
     }
 
@@ -444,12 +450,15 @@ aside p{
     }
 
     #aboutus{
-        width: 200px;
+        width: 450px;
+        margin: 0px;
+        border-radius: 20px;
+        padding: 0px;
 
     }
 
     .aside-title::after{
-        top: 8%
+        top: 10%
     }
 
      /* geral */
@@ -486,11 +495,12 @@ aside p{
 /* aside */
 aside{
     border-radius: 0;
-    height: 600px;
+    height: 700px;
     margin-bottom: 0;
 }
 
 aside p{
+    padding-top: 10px;
     font-size: 15px;
 }
 
@@ -514,6 +524,14 @@ aside p{
  .carousel-caption .main-btn{
     font-size: 14px;
     margin-bottom: 10px;
+ }
+
+ #aboutus{
+    width: 400px;
+ }
+
+ #footer_title{
+    font-size: 35px;
  }
 
 
@@ -550,7 +568,7 @@ aside p{
 
  #mainSlider .carousel-caption h2{
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
  } 
 
  #mainSlider .carousel-caption p{
@@ -580,7 +598,7 @@ aside p{
 /* aside */
 aside{
     border-radius: 0;
-    height: 700px;
+    height: 725px;
     margin-bottom: 0;
 }
 
@@ -608,7 +626,7 @@ aside{
 }
 
 #title{
-    font-size: 28px;
+    font-size: 26px;
 }
 
 #title::after {
